@@ -1821,3 +1821,37 @@ body {
     margin-right: 100px;
   }
 }
+
+/* Small responsive fixes added to improve mobile layout */
+@media (max-width: 767px) {
+  .featured .left-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding-left: 0;
+  }
+  .header-area .main-nav .logo h1 {
+    line-height: 1 !important;
+    font-size: clamp(18px,5vw,28px) !important;
+    white-space: normal !important;
+  }
+  .main-banner .item {
+    padding: 120px 10% 180px 10%;
+  }
+  .main-banner .item h2 {
+    font-size: clamp(28px,8vw,48px);
+    line-height: 1.1;
+    width: 100%;
+    white-space: normal;
+  }
+  .fun-facts .counter {
+    width: 100% !important;
+    display: block !important;
+    margin: 0 auto 30px;
+    padding: 20px;
+  }
+  .contact-content #contact-form, .contact-page .item {
+    min-width: auto;
+    width: 100%;
+  }
+}
